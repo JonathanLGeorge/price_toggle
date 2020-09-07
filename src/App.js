@@ -59,16 +59,16 @@ function App() {
         <div className="flex">
           {toggled && (
             <>
-              <Card info={cardInfo[0]} />
-              <Card info={cardInfo[1]} />
-              <Card info={cardInfo[2]} />
+              <Card info={cardInfo[0]} pay={cardInfo[0].monthly} />
+              <Card info={cardInfo[1]} pay={cardInfo[1].monthly} />
+              <Card info={cardInfo[2]} pay={cardInfo[2].monthly} />
             </>
           )}
           {!toggled && (
             <>
-              <Card info={cardInfo[1]} />
-              <Card info={cardInfo[1]} />
-              <Card info={cardInfo[1]} />
+              <Card info={cardInfo[0]} pay={cardInfo[0].annually} />
+              <Card info={cardInfo[1]} pay={cardInfo[1].annually} />
+              <Card info={cardInfo[2]} pay={cardInfo[2].annually} />
             </>
           )}
         </div>

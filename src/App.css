@@ -12,33 +12,6 @@ body {
   justify-content: center;
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  min-height: 100vh;
-}
-
-body::before {
-  content: "";
-  background-image: url("./images/bg-top.svg");
-  background-repeat: no-repeat;
-  background-position: top right;
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-}
-
-body::after {
-  content: "";
-  background-image: url("./images/bg-bottom.svg");
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
 }
 
 .container {
@@ -53,20 +26,15 @@ body::after {
   justify-content: center;
 }
 
-h1 {
-  color: hsl(233, 13%, 49%);
-}
-
 .toggle-container {
   color: hsl(234, 14%, 74%);
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .price-box {
   background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  color: hsl(233, 13%, 49%);
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   padding: 30px;
   margin: 10px;
 }
@@ -78,13 +46,7 @@ h1 {
     hsl(237, 63%, 64%)
   );
   color: #fff;
-
-  transform: scale(1.15);
-}
-
-.price-box.price-box-premium > * {
-  /* Number provided by Theo 🎉 */
-  transform: scale(0.869);
+  transform: scale(1.25);
 }
 
 .price-box h4 {
@@ -92,22 +54,9 @@ h1 {
 }
 
 .price-box p {
-  color: hsl(232, 13%, 33%);
   font-size: 4em;
   margin: 15px 0;
   width: 250px;
-}
-
-.price-box .monthly {
-  display: none;
-}
-
-.show-monthly .price-box .monthly {
-  display: block;
-}
-
-.show-monthly .price-box .annually {
-  display: none;
 }
 
 .price-box ul {

@@ -7,7 +7,7 @@ export default function Card(props) {
     <div className={props.info.class}>
       <h4>{props.info.type}</h4>
       <p>
-        <span classname={props.info.annually}>${props.info.annually}</span>
+        <span classname={props.info.annually}>${props.pay}</span>
       </p>
       <ul>
         <li>{props.info.list1}</li>
